@@ -112,6 +112,14 @@ button {
   font-size: 1.1rem;
 }
 
+.signin-button {
+  width: 35%;
+  padding: 25px;
+  margin: 0 auto;
+  font-size: 1.5em;
+  position: relative;
+}
+
 button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
@@ -196,5 +204,9 @@ img {
   }
   form button {
     margin-top: 6px;
+  }
+  .signin-button {
+    width: 50%;
+    font-size: 1.3em;
   }
 }

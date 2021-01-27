@@ -22,7 +22,12 @@ const MainLayout = () => {
         {auth.user ? (
           <MessageList />
         ) : (
-          <button onClick={(e) => auth.signInWithGoogle()}>SignIn</button>
+          <button
+            className='signin-button'
+            onClick={(e) => auth.signInWithGoogle()}
+          >
+            SignIn
+          </button>
         )}
       </section>
     </div>
