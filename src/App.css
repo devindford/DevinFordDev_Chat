@@ -1,0 +1,200 @@
+body {
+  background-color: #104738;
+}
+
+.App {
+  text-align: center;
+  max-width: 728px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: initial;
+  margin-right: 10px;
+}
+
+.App header {
+  background-color: #333333;
+  height: 8vh;
+  min-height: 50px;
+  color: #ffffff;
+  position: fixed;
+  width: 100%;
+  max-width: 728px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  padding: 10px;
+  box-sizing: border-box;
+  border: solid 1px #000000;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.App section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f2f2ff;
+}
+
+main {
+  padding: 10px;
+  height: 81.9vh;
+  margin: 8vh 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+main::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+main::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #38cea3;
+  border-radius: 50%;
+}
+
+form {
+  height: 8vh;
+  position: fixed;
+  bottom: 0;
+  background-color: #333333;
+  width: 100%;
+  max-width: 728px;
+  display: flex;
+  border: solid 1px #000000;
+}
+
+form button {
+  height: 80%;
+  width: 80px;
+  text-align: center;
+  padding: 0;
+  margin: 8px 5px 0 0;
+}
+
+input {
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1.5rem;
+  background: #333333;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+}
+
+button {
+  background-color: #38cea3;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 12px;
+  font-size: 1.1rem;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.sign-in {
+  color: #282c34;
+  background: white;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+ul,
+li {
+  text-align: left;
+  list-style: none;
+}
+
+p {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 15px;
+  border-radius: 35px;
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent p {
+  color: white;
+  background: #0b93f6;
+  align-self: flex-end;
+}
+.received p {
+  background: #333333;
+  color: #ffffff;
+}
+
+.timestamp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timestamp p {
+  background: transparent;
+  color: #1e1e24;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
+
+@media only screen and (max-width: 660px) {
+  input {
+    font-size: 1em;
+  }
+
+  button {
+    padding: 5px 12px;
+    width: 28%;
+    font-size: 1rem;
+  }
+
+  .App header h2 {
+    font-size: 1em;
+  }
+  form button {
+    margin-top: 6px;
+  }
+}
