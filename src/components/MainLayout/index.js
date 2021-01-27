@@ -13,7 +13,19 @@ const MainLayout = () => {
           Sign Out
         </button>
         <div className='header-logo'>
-          <h2>Devin Ford Development</h2>
+          <div className='header-text'>
+            <h2>Devin Ford Development</h2>
+            <div className='twitter'>
+              <p>Created by: </p>
+              <a
+                href='https://twitter.com/devindford'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                @DevinDFord
+              </a>
+            </div>
+          </div>
           <img src={codingLogo} alt='Coding Bracket' className='logo' />
         </div>
       </header>

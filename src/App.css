@@ -67,6 +67,28 @@ main::-webkit-scrollbar-thumb {
   background: #38cea3;
   border-radius: 50%;
 }
+.header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-text h2 {
+  margin: 0 5px 0 0;
+}
+
+.twitter {
+  display: flex;
+  align-items: center;
+}
+
+.twitter p {
+  margin: 0;
+  padding: 0 5px 0 0;
+}
+
+a {
+  color: #0b93f6;
+}
 
 form {
   height: 8vh;
