@@ -8,10 +8,12 @@ const MainLayout = () => {
 
   return (
     <div className='App'>
-      <header>
-        <button className='sign-out' onClick={() => auth.signOut()}>
-          Sign Out
-        </button>
+      <header className={auth.user ? 'signed-in' : 'signed-out'}>
+        {auth.user && (
+          <button className='sign-out' onClick={() => auth.signOut()}>
+            Sign Out
+          </button>
+        )}
         <div className='header-logo'>
           <div className='header-text'>
             <h2>Devin Ford Development</h2>

@@ -9,7 +9,7 @@ const firestore = firebase.firestore();
 const MessageList = () => {
   const dummy = useRef();
   const messagesRef = firestore.collection('messages');
-  const query = messagesRef.orderBy('createdAt').limit(25);
+  const query = messagesRef.orderBy('createdAt', 'asc').limit(25);
   const auth = useAuth();
   const [messages] = useCollectionData(query, { idField: 'id' });
   const [formValue, setFormValue] = useState('');
