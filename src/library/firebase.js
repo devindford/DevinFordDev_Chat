@@ -4,12 +4,13 @@ import 'firebase/auth';
 
 if (!firebase.apps.length) {
   firebase.initializeApp({
-    apiKey: 'AIzaSyDfXOynq42l7e9NLHUNi6UKzL-w7SwW8jk',
-    authDomain: 'qtech-chat-example.firebaseapp.com',
-    projectId: 'qtech-chat-example',
-    storageBucket: 'qtech-chat-example.appspot.com',
-    messagingSenderId: '559549061123',
-    appId: '1:559549061123:web:c7f8d304f95d3de266d636',
+    apiKey: 'AIzaSyBftNfsMqlFz7pMdTKucxTfME1_rjx46OM',
+    authDomain: 'dfdchatprod.firebaseapp.com',
+    projectId: 'dfdchatprod',
+    storageBucket: 'dfdchatprod.appspot.com',
+    messagingSenderId: '688168834296',
+    appId: '1:688168834296:web:9291a035cb3f006b08570d',
+    measurementId: 'G-ESBN3M4N88',
   });
 }
 
