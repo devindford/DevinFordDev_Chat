@@ -168,7 +168,7 @@ p {
   border-radius: 35px;
   position: relative;
   color: #ffffff;
-  text-align: center;
+  text-align: initial;
 }
 
 .message {
