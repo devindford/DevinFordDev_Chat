@@ -14,7 +14,7 @@ exports.detectEvilUsers = functions.firestore
     if (filter.isProfane(text)) {
       const cleaned = filter.clean(text);
       await doc.ref.update({
-        text: `🤐 Swearing is bad. I will no longer say ${cleaned}. I'm sorry 🥺`,
+        text: `🤐 Swearing is bad. I will no longer say "${cleaned}." I'm sorry 🥺`,
       });
 
       await db.collection('banned').doc(uid).set({});

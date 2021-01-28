@@ -3,13 +3,13 @@ import 'firebase/firestore';
 import 'firebase/auth';
 if (!firebase.apps.length) {
   firebase.initializeApp({
-    apiKey: 'AIzaSyBftNfsMqlFz7pMdTKucxTfME1_rjx46OM',
-    authDomain: 'dfdchatprod.firebaseapp.com',
-    projectId: 'dfdchatprod',
-    storageBucket: 'dfdchatprod.appspot.com',
-    messagingSenderId: '688168834296',
-    appId: '1:688168834296:web:9291a035cb3f006b08570d',
-    measurementId: 'G-ESBN3M4N88',
+    apiKey: process.env.FIREBASE_API_KEY,
+    authDomain: process.env.FIREBASE_AUTHDOMAIN,
+    projectId: process.env.FIREBASE_PROJECTID,
+    storageBucket: process.env.FIREBASE_STORAGEBUCKET,
+    messagingSenderId: process.env.FIREBASE_MESSAGESENDERID,
+    appId: process.env.APPID,
+    measurementId: process.env.FIREBASE_MEASURE,
   });
 }
 
