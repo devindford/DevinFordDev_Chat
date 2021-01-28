@@ -1,5 +1,5 @@
 # Devin Ford Development Live Chat
-This project was built as a portfolio example of a live chat environment. This project was built with React as the frontend and Firebase for the backend.
+This project was built as a portfolio example of a live chat environment, using React for the frontend and Firebase for the backend.
 
 ## Live Example
 [Devin Ford Development Chat](https://chat.devinford.dev)
