@@ -1,7 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
-
 if (!firebase.apps.length) {
   firebase.initializeApp({
     apiKey: 'AIzaSyBftNfsMqlFz7pMdTKucxTfME1_rjx46OM',
