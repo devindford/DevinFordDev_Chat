@@ -32,7 +32,7 @@ const MessageList = () => {
 
   useEffect(() => {
     dummy.current.scrollIntoView({ behavior: 'smooth' });
-  }, []);
+  }, [messages?.length]);
 
   return (
     <>
